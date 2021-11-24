@@ -1,3 +1,46 @@
+body {
+    background-color: rgb(232, 214, 248) !important;
+}
+
+.title {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    background-color: rgb(163, 123, 201);
+}
+
+h1 {
+    padding: 10px;
+}
+
+.title p {
+    padding-top: 5px;
+    color: black;
+    background-color: white;
+}
+
+.form {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.form p {
+    padding-top: 15px;
+}
+
+#add-todo {
+    width: 56%;
+    height: 40px;
+}
+
+table {
+    margin-left: 20%;
+}
+
+td {
+    width: 5%;
+}
+
 #edit-box {
       display: none;
   } 
