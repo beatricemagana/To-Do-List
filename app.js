@@ -55,16 +55,16 @@ var app = new function() {
 
   this.Count = function(data) {
     var el   = document.getElementById('count');
-    var name = 'Tasks';
+    var name = 'tasks';
 
     if (data) {
         if(data ==1){
-            name = 'Task'
+            name = 'task'
         }
       el.innerHTML = data + ' ' + name ;
     } 
     else {
-      el.innerHTML = 'No ' + name;
+      el.innerHTML = 'no ' + name;
     }
   };
   
