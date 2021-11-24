@@ -17,18 +17,20 @@
         <h1>My To-Do List</h1>
         <p>Today's Tasks</p>
     </div>
+
     <div class="form">
-        <form action="javascript:void(0);" method="post" onsubmit="app.add();">
+        <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
             <input type="text" id="add-todo" placeholder="Task Item">
             <input type="submit" value="Add" class="btn btn-primary">
         </form>
-       
-        <p>You have:</p>
+        <p>You have: </p>
         <p id="count"></p>
 
         <table>
             <tr class="to-do">
-                <th><h3>To Do:</h3></th>
+                <th>
+                    <h3>To Do:</h3>
+                </th>
             </tr>
             <tbody id="tasks">
             </tbody>
@@ -36,15 +38,14 @@
     </div>
 
     <div id="edit-box" role="aria-hidden">
-        <form action="javascript:void(0);" method="post" id="save-edit">
+        <form action="javascript:void(0);" method="POST" id="save-edit">
             <input type="text" id="edit-todo">
-            <input type="submit" value="save" class="btn btn-success">
-            <a onclick="closeInput()" aria-label='close'>&#10006;</a>
+            <input type="submit" value="Save" class="btn btn-success" /> <a onclick="CloseInput()"
+                aria-label="Close">&#10006;</a>
         </form>
     </div>
 
     <script src="app.js"></script>
-
 </body>
 
 </html>
