@@ -9,7 +9,7 @@ var app = new function() {
     if (this.tasks.length > 0) {
       for (i = 0; i < this.tasks.length; i++) {
         data += '<tr>';
-        data += '<td>'+(i+1)+". " + this.tasks[i] + '</td>';
+        data += '<td>'+ '<input type="checkbox" class="checkbox checkbox-checked" name="checkbox" checkbox>' + (i+1)+". " + this.tasks[i] + '</td>';
         data += '<br><td><button onclick="app.Edit(' + i + ')"  class="btn-sm btn-warning btn-space">Edit</button></td>';
         data += '<td><button onclick="app.Delete(' + i + ')"  class="btn-sm btn-danger">Delete</button></td>';
         data += '</tr>';

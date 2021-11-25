@@ -26,6 +26,14 @@
             </form>
             <p>You have <span id="count"></span></p>
 
+            <div id="edit-box" role="aria-hidden">
+                <form action="javascript:void(0);" method="POST" id="save-edit">
+                    <input type="text" id="edit-todo">
+                    <input type="submit" value="Save" class="btn-sm btn-success" /> <a onclick="CloseInput()"
+                        aria-label="Close">&#10006;</a>
+                </form>
+            </div>
+
             <table>
                 <tr class="to-do">
                     <th>
@@ -35,14 +43,6 @@
                 <tbody id="tasks">
                 </tbody>
             </table>
-        </div>
-
-        <div id="edit-box" role="aria-hidden">
-            <form action="javascript:void(0);" method="POST" id="save-edit">
-                <input type="text" id="edit-todo">
-                <input type="submit" value="Save" class="btn-sm btn-success" /> <a onclick="CloseInput()"
-                    aria-label="Close">&#10006;</a>
-            </form>
         </div>
     </div>
     <script src="app.js"></script>
